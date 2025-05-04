@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import ItemCard from "../components/ItemCard";
 import SearchFilter from "../components/SearchFilter";
 import CollegeCarousel from "../components/CollegeCarousel";
-import ReportLost from "./ReportLost.jsx";
+import ReportLost from "./ReportLost";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [items, setItems] = useState([
@@ -58,9 +59,12 @@ const Home = () => {
             Helping students find what matters — from gadgets to notebooks, and everything in between.
           </p>
           <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <a href="/ReportLost" className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition-transform hover:scale-105">
-              Report Lost Item
-            </a>
+            <Link
+  to="/ReportLost"
+  className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition-transform hover:scale-105"
+>
+  Report Lost Item
+</Link>
             <a href="/report-found" className="px-6 py-3 bg-green-600 text-white font-semibold rounded-lg shadow-lg hover:bg-green-700 transition-transform hover:scale-105">
               Report Found Item
             </a>
