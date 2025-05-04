@@ -18,10 +18,10 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/login",
-        { email, password },
-        { headers: { "Content-Type": "application/json" } }
-      );
+  "https://backend-3uy2.onrender.com/api/auth/login",
+  { email, password },
+  { headers: { "Content-Type": "application/json" } }
+);
 
       if (response.data && response.data.token) {
         localStorage.setItem("token", response.data.token);
