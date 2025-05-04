@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ItemCard from "../components/ItemCard";
 import SearchFilter from "../components/SearchFilter";
 import CollegeCarousel from "../components/CollegeCarousel";
+import ReportLost from "./ReportLost.jsx";
 import { motion } from "framer-motion";
 
 const Home = () => {
