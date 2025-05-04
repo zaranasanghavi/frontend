@@ -2,10 +2,7 @@ import React, { useState } from "react";
 import ItemCard from "../components/ItemCard";
 import SearchFilter from "../components/SearchFilter";
 import CollegeCarousel from "../components/CollegeCarousel";
-import ReportLost from "./ReportLost";
-import ReportLost from "./ReportFound";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 
 const Home = () => {
   const [items, setItems] = useState([
@@ -60,15 +57,12 @@ const Home = () => {
             Helping students find what matters — from gadgets to notebooks, and everything in between.
           </p>
           <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <Link
-            to="/report-lost"
-            className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition-transform hover:scale-105"
-            >
-                Report Lost Item
-            </Link>
-            <Link to="/report-found" className="px-6 py-3 bg-green-600 text-white font-semibold rounded-lg shadow-lg hover:bg-green-700 transition-transform hover:scale-105">
+            <a href="/report-lost" className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition-transform hover:scale-105">
+              Report Lost Item
+            </a>
+            <a href="/report-found" className="px-6 py-3 bg-green-600 text-white font-semibold rounded-lg shadow-lg hover:bg-green-700 transition-transform hover:scale-105">
               Report Found Item
-            </Link>
+            </a>
           </div>
         </motion.div>
       </section>
@@ -183,7 +177,7 @@ const Home = () => {
           transition={{ duration: 1 }}
         >
           {[
-            ["Zarana Sanghavi", "DevOps & Frontend Developer", "Handled deployment tasks including server setup, environment variable management, frontend-backend integration, production builds, and ensuring smooth production workflow.Worked on UI/UX design and responsive React components."],
+            ["Zarana Sanghvi", "Frontend Developer", "Worked on UI/UX design and responsive React components."],
             ["Tithi Solanki", "Backend Developer", "Built Express.js routes, MongoDB database and login system."],
             ["Vaishnavi Kamble", "UI/UX Designer", "Designed intelligent AI-based item categorization tools."],
           ].map(([name, role, desc], idx) => (
