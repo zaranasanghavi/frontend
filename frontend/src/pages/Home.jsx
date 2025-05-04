@@ -177,7 +177,7 @@ const Home = () => {
           transition={{ duration: 1 }}
         >
           {[
-            ["Zarana Sanghvi", "Frontend Developer", "Worked on UI/UX design and responsive React components."],
+            ["Zarana Sanghavi", "DevOps & Frontend Developer", "Handled deployment tasks including server setup, environment variable management, frontend-backend integration, production builds, and ensuring smooth production workflow.Worked on UI/UX design and responsive React components."],
             ["Tithi Solanki", "Backend Developer", "Built Express.js routes, MongoDB database and login system."],
             ["Vaishnavi Kamble", "UI/UX Designer", "Designed intelligent AI-based item categorization tools."],
           ].map(([name, role, desc], idx) => (
