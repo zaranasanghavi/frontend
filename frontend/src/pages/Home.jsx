@@ -61,12 +61,12 @@ const Home = () => {
           </p>
           <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
             <Link
-            to="/ReportLost"
+            to="/report-lost"
             className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition-transform hover:scale-105"
             >
                 Report Lost Item
             </Link>
-            <Link to="/ReortFound" className="px-6 py-3 bg-green-600 text-white font-semibold rounded-lg shadow-lg hover:bg-green-700 transition-transform hover:scale-105">
+            <Link to="/report-found" className="px-6 py-3 bg-green-600 text-white font-semibold rounded-lg shadow-lg hover:bg-green-700 transition-transform hover:scale-105">
               Report Found Item
             </Link>
           </div>
