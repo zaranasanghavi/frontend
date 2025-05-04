@@ -18,7 +18,7 @@ const ReportLost = () => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/lost/categories");
+        const response = await axios.get("https://backend-3uy2.onrender.com/api/lost/categories");
         setCategories(Array.isArray(response.data) ? response.data : []);
       } catch (err) {
         console.error("Error fetching categories:", err);
@@ -36,7 +36,7 @@ const ReportLost = () => {
           return;
         }
 
-        const response = await axios.get("http://localhost:5000/api/auth/user", {
+        const response = await axios.get("https://backend-3uy2.onrender.com/api/auth/user", {
           headers: { Authorization: `Bearer ${token}` },
         });
 
@@ -76,7 +76,7 @@ const ReportLost = () => {
     if (image) formData.append("image", image);
 
     try {
-      await axios.post("http://localhost:5000/api/lost/report", formData, {
+      await axios.post("https://backend-3uy2.onrender.com/api/lost/report", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
           Authorization: `Bearer ${localStorage.getItem("token")}`,
