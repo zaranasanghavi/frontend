@@ -7,7 +7,7 @@ const FoundItems = () => {
   useEffect(() => {
     const fetchFoundItems = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/found");
+        const response = await axios.get("https://backend-3uy2.onrender.com/api/found");
         setFoundItems(response.data);
       } catch (error) {
         console.error("Error fetching found items:", error);
