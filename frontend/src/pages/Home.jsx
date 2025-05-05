@@ -177,9 +177,9 @@ const Home = () => {
           transition={{ duration: 1 }}
         >
           {[
-            ["Zarana SanghAvi", "Frontend Developement & Deployment", "Deployed on Vercel and Render. Worked on UI/UX design and responsive React components."],
+            ["Zarana Sanghavi", "Frontend Developement & Deployment", "Deployed on Vercel and Render. Worked on UI/UX design and responsive React components."],
             ["Tithi Solanki", "Backend Developer", "Built Express.js routes, MongoDB database and login system."],
-            ["Vaishnavi Kamble", "UI/UX Designer", "Designed intelligent AI-based item categorization tools."],
+            ["Vaishnavi Kamble", "UI/UX Designer", "Designed intelligent interactive user interface."],
           ].map(([name, role, desc], idx) => (
             <div key={idx} className="bg-white p-4 rounded-lg shadow text-center hover:shadow-lg transition">
               <h3 className="text-lg font-semibold">{name}</h3>
